@@ -1,51 +1,53 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Arione John",
+  lastName: "Dauis",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Full Stack Software Developer",
+  avatar: "/images/avatar.png",
+  email: "dauis.arionejohn@gmail.com",
+  location: "Asia/Manila",
+  languages: [],
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about web development, technology, and share insights on building scalable applications.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/NarixenoAdaxius",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
     link: "",
   },
   {
     name: "Email",
     icon: "email",
     link: `mailto:${person.email}`,
+  },
+  {
+    name: "WhatsApp",
+    icon: "whatsapp",
+    link: "https://wa.me/639619951286",
+  },
+  {
+    name: "Contact Number",
+    icon: "phone",
+    link: "tel:+639058443808",
   },
 ];
 
@@ -55,16 +57,15 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Hi! I'm Arione ✌</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Recent project: <strong className="ml-4">Palatte Mail</strong></>,
+    href: "/work/palatte-mail",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+     I'm passionate about web development, technology, and building scalable applications. I occasionally share insights and ideas on these topics.
     </>
   ),
 };
@@ -82,115 +83,113 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
-    link: "https://cal.com",
+    display: false,
+    link: "",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+       A Versatile Full Stack Developer with 2+ years of hands-on experience building scalable web apps and enterprise tools. Comfortable working across the stack with JavaScript, Node.js, and SQL/NoSQL databases. Enjoys collaborating with teams in agile settings to turn ideas into reliable, user-friendly software. Passionate about writing clean code, learning new technologies, and solving real-world problems
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Dream PC Builds & IT Solutions Inc.",
+        timeframe: "Mar 2025 - May 2025",
+        role: "IT Intern",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Collaborated in technology rollouts, system maintenance, and team IT projects.</>,
+          <>Restructured and developed a custom Point of Sales (POS) system tailored to company operations.</>,
+          <>Spearheaded the planning and installation of the company server infrastructure with Ubuntu Server.</>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "ALPHA: Alliance of Leading Programmers through Heuristic Adaptation",
+        timeframe: "Jan 2024 - Dec 2024",
+        role: "Full Stack Head Web Developer",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Led a team of 10 developers in the creation of efficient web systems including an event ticketing platform, automated email solutions, event dashboards, custom event forms, and the organization's landing website.</>,
+          <>Provided training and mentorship of new developers.</>,
         ],
         images: [],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "STI Colleges Ortigas-Cainta",
+        description: <>BS in Computer Science</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Programming Languages",
+        description: (
+          <>
+            <ul>
+              <li>JavaScript (ES6+), TypeScript, Java, C#, PHP, VB.Net</li>
+            </ul>
+          </>
+        ),
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Frameworks & Libraries",
+        description: (
+          <>
+            <ul>
+              <li>Next.js, Node.js, CSS, HTML</li>
+            </ul>
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Databases",
+        description: (
+          <>
+            <ul>
+              <li>MongoDB, MariaDB, SQLite</li>
+            </ul>
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Tools & Platforms",
+        description: (
+          <>
+            <ul>
+              <li>Git, GitHub, Figma, JIRA, Trello, Microsoft Office, Linux, Debian</li>
+            </ul>
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "Other Skills",
+        description: (
+          <>
+            <ul>
+              <li>REST APIs, Google API, IoT, Unity</li>
+            </ul>
+          </>
+        ),
+        images: [],
       },
     ],
   },
@@ -199,10 +198,8 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about web development and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work = {
@@ -210,59 +207,14 @@ const work = {
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
 };
 
 const gallery = {
   path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
+  label: "Certifications",
+  title: `Certifications – ${person.name}`,
+  description: `A collection of my certifications`,
+  images: [],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };

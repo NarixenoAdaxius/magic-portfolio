@@ -214,7 +214,11 @@ const gallery = {
   label: "Certifications",
   title: `Certifications – ${person.name}`,
   description: `A collection of my certifications`,
-  images: [],
+  images: [ {
+    src: "/images/gallery/horizontal-1.jpg",
+    alt: "image",
+    orientation: "horizontal",
+  }],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };

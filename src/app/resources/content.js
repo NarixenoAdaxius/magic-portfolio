@@ -32,7 +32,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "",
+    link: "https://www.linkedin.com/in/arione-dauis/",
   },
   {
     name: "Email",

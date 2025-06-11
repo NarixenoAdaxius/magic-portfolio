@@ -1,0 +1,61 @@
+---
+title: "Alpha QR Ticket Scanner"
+publishedAt: "2024-11-27"
+summary: "Mobile QR code ticket scanner for ALPHA ICT Week 2024 events and workshops"
+featured: true
+images:
+  - "/images/projects/AlphaQRScanner/Login.jpg"
+  - "/images/projects/AlphaQRScanner/Scamner.jpg"
+  - "/images/projects/AlphaQRScanner/Pause.jpg"
+  - "/images/projects/AlphaQRScanner/ScanHistory.jpg"
+team:
+  - name: "Arione Dauis"
+    role: "Backend Lead Developer"
+    avatar: "/images/avatar.png"
+    github: "https://github.com/NarixenoAdaxius"
+link: "https://ictweekqrscanner.vercel.app/"
+---
+
+## Overview
+
+The Alpha QR Ticket Scanner is a mobile-first Progressive Web Application (PWA) designed specifically for ALPHA ICT Week 2024 event management. This streamlined scanning solution enables event organizers and staff to efficiently track attendance across multiple workshops and seminars by scanning QR code tickets. The app provides real-time attendance monitoring, scan history tracking, and seamless event switching capabilities.
+
+## Key Features
+
+- **Multi-Event Support**: Dynamic event selection with support for various ICT Week activities including CYBER FEST Seminar, Soldering Workshop, Circuit Workshop, and Arduino Workshop.
+- **Real-time QR Scanning**: High-performance camera-based QR code scanning with instant ticket validation and attendance recording.
+- **Scan History Tracking**: Comprehensive scan history with persistent storage, allowing users to review all scanned tickets and attendance records.
+- **Progressive Web App**: Mobile-optimized PWA with offline capabilities, ensuring reliable operation even with limited connectivity.
+- **Secure Authentication**: Protected access with username/password authentication to ensure only authorized personnel can scan tickets.
+- **Scanner Controls**: Intuitive pause/resume functionality for scanner management during busy event periods.
+- **Event Switching**: Seamless switching between different events and workshops without requiring app restart.
+
+## Technologies Used
+
+- **Next.js**: For fast, server-rendered React applications with optimal performance and mobile optimization.
+- **Next-PWA**: For Progressive Web App capabilities, offline functionality, and native app-like experience.
+- **MongoDB**: For storing and managing scan records, attendance data, and event information.
+- **ShadCN**: For building consistent, accessible, and mobile-responsive UI components.
+- **Tailwind CSS**: For rapid styling and responsive design optimized for mobile devices.
+- **Nodemailer**: For automated email notifications and attendance report delivery.
+- **Vercel**: For seamless deployment and hosting with excellent mobile performance.
+
+## Challenges and Learnings
+
+One of the primary challenges was developing a reliable QR code scanning system that performs consistently across different mobile devices and lighting conditions. Optimizing camera access and QR detection algorithms required extensive testing on various smartphones to ensure universal compatibility.
+
+Implementing Progressive Web App functionality presented unique challenges in balancing offline capabilities with real-time data synchronization. We developed a robust caching strategy that allows the app to function seamlessly during network interruptions while ensuring scan data is properly synchronized when connectivity is restored.
+
+Another significant challenge was designing an intuitive mobile interface that works efficiently during high-traffic event periods. The scanner needed to be fast, responsive, and error-resistant to handle rapid consecutive scans without performance degradation or user interface lag.
+
+Managing multiple concurrent events while maintaining scan accuracy required careful state management and event switching logic. We implemented efficient data structures and validation systems to prevent cross-event scan errors and ensure attendance data integrity.
+
+## Outcome
+
+The Alpha QR Ticket Scanner successfully streamlined attendance tracking for ALPHA ICT Week 2024, processing hundreds of ticket scans across multiple workshops and seminars. The mobile-first design enabled staff to move freely throughout event venues while maintaining accurate attendance records.
+
+The Progressive Web App architecture proved invaluable during the event, providing reliable operation even in areas with poor network connectivity. The offline capabilities ensured no scan data was lost, while automatic synchronization maintained real-time attendance visibility for event coordinators.
+
+The scanner's efficiency significantly reduced check-in times and eliminated manual attendance tracking, improving the overall event experience for both participants and organizers. The scan history feature provided valuable post-event analytics for attendance patterns and workshop popularity.
+
+The success of this mobile scanning solution has established it as the standard attendance tracking system for future ALPHA events. The scalable architecture and PWA capabilities provide a solid foundation for expanding to larger events and additional scanning scenarios beyond ICT Week.

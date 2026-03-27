@@ -15,7 +15,12 @@ const person = {
 
 const newsletter = {
   display: false,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: (
+    <>
+      Subscribe to {person.firstName}
+      {"'"}s Newsletter
+    </>
+  ),
   description: (
     <>
       I occasionally write about web development, technology, and share insights on building scalable applications.
@@ -57,7 +62,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Hi! I'm Arione ✌</>,
+  headline: (
+    <>
+      Hi! I{"'"}m Arione ✌
+    </>
+  ),
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Bug Hunter</strong></>,

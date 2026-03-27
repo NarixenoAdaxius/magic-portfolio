@@ -1,7 +1,7 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Arione John",
+  firstName: "Arione John C.",
   lastName: "Dauis",
   get name() {
     return `${this.firstName} ${this.lastName}`;
@@ -60,12 +60,12 @@ const home = {
   headline: <>Hi! I'm Arione ✌</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Palatte Mail</strong></>,
-    href: "/work/palatte-mail",
+    title: <>Recent project: <strong className="ml-4">Bug Hunter</strong></>,
+    href: "/work/bug-hunter",
   },
   subline: (
     <>
-     I'm passionate about web development, technology, and building scalable applications. I occasionally share insights and ideas on these topics.
+      Versatile full stack developer with 3+ years building scalable web apps, internal tools, and AI-assisted workflows. I work across JavaScript/TypeScript, Node.js, Next.js, and SQL/NoSQL—from POC to production—and I care about developer productivity and systems that solve real problems.
     </>
   ),
 };
@@ -91,7 +91,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-       A Versatile Full Stack Developer with 2+ years of hands-on experience building scalable web apps and enterprise tools. Comfortable working across the stack with JavaScript, Node.js, and SQL/NoSQL databases. Enjoys collaborating with teams in agile settings to turn ideas into reliable, user-friendly software. Passionate about writing clean code, learning new technologies, and solving real-world problems
+        Versatile full stack developer with 3+ years of experience building scalable web applications, internal developer tools, and AI-powered workflows. Experienced with JavaScript/TypeScript, Node.js, Next.js, and SQL/NoSQL databases, designing end-to-end systems from proof-of-concept to production. I have led development teams and translated product requirements into working prototypes and solutions. I am passionate about developer productivity, AI-assisted development, and efficient, scalable systems that solve real-world problems.
       </>
     ),
   },
@@ -99,6 +99,17 @@ const about = {
     display: true,
     title: "Work Experience",
     experiences: [
+      {
+        company: "American Sourcing Group (ASG Platform)",
+        timeframe: "Sept 2025 - Mar 2026",
+        role: "Software Developer",
+        achievements: [
+          <>Led a development team in translating Product Requirement Documents (PRDs) into working Proofs of Concept (POCs) to validate new features and technical approaches.</>,
+          <>Developed internal VS Code tools integrated with AI, improving team productivity and development speed by ~30%.</>,
+          <>Built and tested AI-driven pipelines and workflow automations, enabling rapid prototyping and evaluation of new solutions.</>,
+        ],
+        images: [],
+      },
       {
         company: "Dream PC Builds & IT Solutions Inc.",
         timeframe: "Mar 2025 - May 2025",
@@ -115,8 +126,8 @@ const about = {
         timeframe: "Jan 2024 - Dec 2024",
         role: "Full Stack Head Web Developer",
         achievements: [
-          <>Led a team of 10 developers in the creation of efficient web systems including an event ticketing platform, automated email solutions, event dashboards, custom event forms, and the organization's landing website.</>,
-          <>Provided training and mentorship of new developers.</>,
+          <>Led a team of 10 developers building efficient web systems—event ticketing, automated email, event dashboards, custom event forms, and the organization landing website—eliminating reliance on third-party applications.</>,
+          <>Provided training and mentorship for new developers on organization workflows.</>,
         ],
         images: [],
       },
@@ -128,7 +139,7 @@ const about = {
     institutions: [
       {
         name: "STI Colleges Ortigas-Cainta",
-        description: <>BS in Computer Science</>,
+        description: <>BS in Computer Science — Cum Laude · Graduation: Jul 2025</>,
       },
     ],
   },
@@ -141,29 +152,29 @@ const about = {
         description: (
           <>
             <ul>
-              <li>JavaScript (ES6+), TypeScript, Java, C#, PHP, VB.Net</li>
+              <li>JavaScript, TypeScript, Java, C#, PHP, HTML, CSS</li>
             </ul>
           </>
         ),
         images: [],
       },
       {
-        title: "Frameworks & Libraries",
+        title: "Frameworks & Runtimes",
         description: (
           <>
             <ul>
-              <li>Next.js, Node.js, CSS, HTML</li>
+              <li>Next.js, Node.js</li>
             </ul>
           </>
         ),
         images: [],
       },
       {
-        title: "Databases",
+        title: "Databases & Data Stores",
         description: (
           <>
             <ul>
-              <li>MongoDB, MariaDB, SQLite</li>
+              <li>MongoDB, MariaDB, SQLite, Redis, etcd</li>
             </ul>
           </>
         ),
@@ -174,18 +185,19 @@ const about = {
         description: (
           <>
             <ul>
-              <li>Git, GitHub, Figma, JIRA, Trello, Microsoft Office, Linux, Debian</li>
+              <li>Git, GitHub, Figma, JIRA, Docker, Linux, Debian, Microsoft Office</li>
             </ul>
           </>
         ),
         images: [],
       },
       {
-        title: "Other Skills",
+        title: "APIs, AI & Other",
         description: (
           <>
             <ul>
-              <li>REST APIs, Google API, IoT, Unity</li>
+              <li>REST APIs, gRPC, Google API, OpenAI API, IoT</li>
+              <li>Claude Code, Cursor, Antigravity</li>
             </ul>
           </>
         ),

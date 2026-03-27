@@ -1,0 +1,45 @@
+---
+title: "Bug Hunter — gamified code analysis for VS Code"
+publishedAt: "2026-03-27"
+summary: "VS Code extension that turns workspace analysis into a gamified sidebar: bugs, XP, levels, and deep links to source."
+featured: true
+images:
+  - "/images/projects/bug-hunter/screenshot-dashboard.png"
+  - "/images/projects/bug-hunter/screenshot-fighting.png"
+  - "/images/projects/bug-hunter/screenshot-defeated-insights.png"
+  - "/images/projects/bug-hunter/screenshot-store-pets.png"
+team:
+  - name: "Arione Dauis"
+    role: "Sole Developer"
+    avatar: "/images/avatar.png"
+    github: "https://github.com/NarixenoAdaxius"
+link: "https://github.com/NarixenoAdaxius/bug-hunter"
+---
+
+## Overview
+
+Bug Hunter is a VS Code extension that turns workspace code analysis into a **gamified sidebar**: findings become bugs to hunt, progress uses **XP and levels**, and actions **deep-link to source** so fixes stay visible in the UI. It is built as a TypeScript monorepo with strict boundaries between the extension host, webview, analyzers, and a pure game/progression engine.
+
+## Key features
+
+- **Dashboard & Bug Arena** — Level progress, XP, Boogles (in-game currency), and an active roster of bugs with rarity and issue details.
+- **Fight flow** — Attack opens the editor at the relevant line; resolving the underlying issue defeats the bug and updates the archive.
+- **Defeated archive & insights** — History of cleared issues, activity log, and structured issue views.
+- **Boogles store** — Spend currency on cosmetics: pets, avatars, header borders, and panel themes.
+- **Pluggable analysis** — Orchestrator-driven rules (e.g. complexity, secrets, nesting) with room for optional native (N-API) analyzers and AI provider hooks.
+
+## Architecture
+
+- **Monorepo** — npm workspaces with a fixed build order: shared types → game engine → analyzers → AI stub → webview → extension (webview `dist` copied into extension media).
+- **Typed contracts** — Extension ↔ webview messages are typed end-to-end so UI and VS Code APIs stay aligned and testable.
+- **Separation of concerns** — React + Tailwind sidebar UI, analyzer orchestrator, and pure TypeScript game/progression logic are isolated from VS Code API surface area.
+
+## Technologies
+
+- **TypeScript** across packages; **React** + **Tailwind** for the webview UI.
+- **VS Code Extension API** for commands, webviews, and workspace integration.
+- **Vite** for webview builds; **.vsix** packaging with a documented pipeline.
+
+## Outcome
+
+The extension is packaged for distribution as a **.vsix** with a documented build path. The architecture supports **optional native analyzers** and **AI integrations** without coupling them to core UI or progression logic—making the product easier to extend and maintain.
